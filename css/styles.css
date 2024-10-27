@@ -1,0 +1,126 @@
+html {
+    font-size: 25px;
+}
+
+body {
+    background-color: #515764;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 20px;
+    font-family: 'Concert One', sans-serif;
+}
+
+canvas {
+    margin: 0;
+    align-self: center;
+    border: none;
+    border-radius: 25px 25px 0 0;
+}
+
+#dialogue-box {
+    box-sizing: border-box;
+    background-color: #c4cadd;
+    border-radius: 0px 0px 25px 25px;
+    height: 200px;
+    padding: 20px;
+    margin: 0;
+    align-self: center;
+}
+
+#dialogue-box p, #dialogue-box h3 {
+    width: 80%;
+    margin: 0 0 10px;
+}
+
+button {
+    background-color: #4bff80;;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Concert One', sans-serif;
+    font-size: 50px;
+    margin: 15px 10px 50px;
+    padding: 20px;
+}
+
+#next-button {
+    height: 100px;
+    width: 150px;
+    float: right;
+}
+
+button:hover {
+    background-color: #93ffb3;
+
+    /* I decided not to have any change on button:focus, it looked odd */
+}
+
+button:active {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+}
+
+button:disabled {
+    background-color: #37c360;
+    border: none;
+}
+
+.canvas-size-container {
+    width: 800px;
+    position: absolute;
+    top: 75px;
+    left: calc(50vw - 400px);
+    height: 350px;
+    display: flex;
+    margin: auto 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+h1 {
+    font-family: 'Nova Square', sans-serif;
+    text-align: center;
+    margin: 20px;
+    font-size: 2.3rem;
+}
+
+#title-screen-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    height: 700px;
+    top: 20px;
+    justify-content: space-between;
+}
+
+#title-screen-container button {
+    align-self: center;
+}
+
+.evidence-button {
+    width: 11em;
+    height: 5em;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Concert One', sans-serif;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.evidence-button:hover {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    
+    /* No focus or active; having them looked odd */
+}
+
+.evidence-button[data-selected="true"] {
+    background-color: #37c360;
+}
