@@ -14,19 +14,19 @@ The game is fully functional; currently needs quality-of-life features and other
 - Improve the art
 
 ## Process
-Originally, this was a class project, so I had to come up with an idea that could reasonably be finished within three weeks (the time span for the project), that I would be passionate about (since I would be working on this project for three weeks, I wanted to make sure it was something I loved), and met all the project requirements. Thankfully, the requirements for the project were thankfully simple -- it simply had to be an interactive experience that made use of PIXI.js and at least one ES6 class -- so I really just had to worry about the first two concerns. After brainstorming, I ultimately settled on making a game in one of my favorite genres, the visual novel mystery. Once I'd decided on that, it just took a few brainstorming sessions to come up with the idea of Inspector 1NSP3CT0R and flesh out the story, and it was off to coding.
+Originally, this was a class project, so I had to come up with an idea that could reasonably be finished within three weeks (the time span for the project), that I would be passionate about (since I would be working on this project for three weeks, I wanted to make sure it was something I loved), and met all the project requirements. Thankfully, the requirements for the project were thankfully simple -- it simply had to be an interactive experience that made use of PIXI.js and at least one ES6 class -- so I really just had to worry about the first two concerns. After brainstorming, I ultimately settled on making a game in one of my favorite genres, the visual novel mystery. Once I'd decided on that, it just took a few brainstorming sessions to come up with the idea of Inspector 1NSP3CT0R and flesh out the story, and it was off to coding.\
 When I first started coding, I mostly just threw together a hodge-podge of concepts to prove to myself that I could get
 something working -- experimenting with the basic technical architecture (including the required ES6 class), the displaying of dialogue, the switch between
-clicking on objects and reading the dialogue. As I did so, I created art for the project when needed.
+clicking on objects and reading the dialogue. As I did so, I created art for the project when needed.\
 Once I had the setup for the game ready, I started actually implementing the game properly, filling out any missing
-pieces of the story and the gameplay. I continued tweaking and polishing until the due date, where I submitted the project.
-Once I'd submitted it, though, I wasn't satisfied. I really loved this little project, and while I did my best with the three weeks I had, I felt I could make it a lot better with more time, and possibly even continue Inspector 1NSP3CT0R's story with more games. So, I decided to turn Inspector 1NSP3CT0R into a personal project and continue improving it.
+pieces of the story and the gameplay. I continued tweaking and polishing until the due date, where I submitted the project.\
+Once I'd submitted it, though, I wasn't satisfied. I really loved this little project, and while I did my best with the three weeks I had, I felt I could make it a lot better with more time, and possibly even continue Inspector 1NSP3CT0R's story with more games. So, I decided to turn Inspector 1NSP3CT0R into a personal project and continue improving it.\
 One thing I do regret about what I did during the original three weeks I had for the project is that I was heavily focused on getting stuff to work as soon as possible, and thought a lot less of the future and how efficiently the technical architecture might work going forward. So now, in addition to focusing on adding more quality-of-life features and polish to the game, I'm also working on the technical architecture to make it easier to work with.
 
 ## Technical Architecture and Classes
 
 ### Overview
-Most of the game's code is handled in main.js, with each "scene," or gameplay section, functioning as its own unique method that's called at the end of the method immediately preceding it once the end conditions are met (all the dialogue being read, the user clicking on an answer, etc).
+Most of the game's code is handled in main.js, with each "scene," or gameplay section, functioning as its own unique method that's called at the end of the method immediately preceding it once the end conditions are met (all the dialogue being read, the user clicking on an answer, etc).\
 This is one of the main things I intend to improve; I hope to make scenes more modular, probably a class of their own, so that it's easier to create, add, and modify scenes without having to carefully pick through all the code in main.js.
 
 ### ClickableObject
